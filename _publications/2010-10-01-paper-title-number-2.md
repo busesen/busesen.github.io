@@ -1,5 +1,5 @@
 ---
-title: "Sparsity penalized mean–variance portfolio selection: analysis and computation"
+title: "Sparsity Penalized Mean–Variance Portfolio Selection: Analysis and Computation"
 collection: publications
 category: manuscripts
 permalink: /publication/sparse-portfolio
