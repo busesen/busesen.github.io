@@ -27,7 +27,7 @@ author:
   name             : "Buse Şen"
   pronouns         : # example: "she/her"  
   bio              : ""
-  location         : ""
+  location         : #
   employer         : "École Polytechnique Fédérale de Lausanne (EPFL)"
   uri              : #"https://busesen.github.io"
   email            : "buse.sen@epfl.ch" 
