@@ -1,0 +1,10 @@
+# Add the journals you review below. The URL is optional.
+#
+# Example:
+# journals:
+#   - name: "Mathematical Programming"
+#     url: "https://link.springer.com/journal/10107"
+#   - name: "Operations Research"
+#
+# Replace the empty brackets with your journal entries.
+journals: []

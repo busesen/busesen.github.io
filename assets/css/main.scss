@@ -71,6 +71,25 @@ a:focus {
   font-weight: 600;
 }
 
+html[data-theme="dark"] .author-me {
+  color: #e4b86a;
+}
+
+/* Keep the masthead links neutral, including after they have been visited. */
+.greedy-nav .visible-links a,
+.greedy-nav .visible-links a:visited,
+.greedy-nav .hidden-links a,
+.greedy-nav .hidden-links a:visited {
+  color: var(--global-masthead-link-color);
+}
+
+.greedy-nav .visible-links a:hover,
+.greedy-nav .visible-links a:focus,
+.greedy-nav .hidden-links a:hover,
+.greedy-nav .hidden-links a:focus {
+  color: var(--global-masthead-link-color-hover);
+}
+
 /* About page */
 .about-page {
   --section-heading-size: clamp(1.55rem, 2.4vw, 1.85rem);
@@ -397,6 +416,17 @@ a:focus {
   padding: 0.8rem 0;
   border-top: 1px solid var(--global-border-color);
   font-family: "Manrope", sans-serif;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.service-name {
+  color: var(--global-text-color);
+  font-weight: 550;
 }
 
 @media screen and (min-width: 1024px) {
