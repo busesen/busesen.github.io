@@ -264,7 +264,7 @@ a:focus {
 
 .research-meta {
   display: block;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -333,9 +333,41 @@ a:focus {
 }
 
 .course-name {
+  color: var(--global-text-color);
   font-size: 0.98rem;
   font-weight: 550;
   line-height: 1.5;
+}
+
+.course-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.course-arrow,
+.course-arrow:visited {
+  display: inline-flex;
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 1.35rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(64, 120, 111, 0.45);
+  border-radius: 50%;
+  color: #40786f;
+  font-size: 0.72rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.course-arrow:hover,
+.course-arrow:focus {
+  background: #40786f;
+  color: #fff;
+  text-decoration: none;
+  transform: translate(1px, -1px);
 }
 
 .course-term {

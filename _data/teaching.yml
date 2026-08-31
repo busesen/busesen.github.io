@@ -1,0 +1,16 @@
+- institution: "EPFL"
+  role: "Teaching Assistant"
+  courses:
+    - name: "Convex Optimization"
+      term: "Fall 2023, 2024, 2025, 2026"
+      url: "https://edu.epfl.ch/coursebook/en/convex-optimization-MGT-418"
+    - name: "Optimal Decision Making"
+      term: "Spring 2024"
+      url: "https://edu.epfl.ch/coursebook/en/optimal-decision-making-MGT-483"
+
+- institution: "Bilkent University"
+  role: "Teaching Assistant"
+  courses:
+    - name: "Engineering Economic Analysis"
+      term: "Fall and Spring 2022"
+    - name: "Modelling and Methods in Optimization"

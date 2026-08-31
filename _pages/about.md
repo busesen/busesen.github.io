@@ -52,36 +52,25 @@ Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent Uni
 <section id="teaching" class="home-section teaching-section" aria-labelledby="teaching-heading">
   <h2 id="teaching-heading">Teaching</h2>
 
-  <div class="teaching-group">
-    <div class="teaching-group__header">
-      <h3>EPFL</h3>
-      <span>Teaching Assistant</span>
+  {% for group in site.data.teaching %}
+    <div class="teaching-group">
+      <div class="teaching-group__header">
+        <h3>{{ group.institution }}</h3>
+        <span>{{ group.role }}</span>
+      </div>
+      <ul class="course-list">
+        {% for course in group.courses %}
+          <li class="course-item">
+            <span class="course-main">
+              <span class="course-name">{{ course.name }}</span>
+              {% if course.url %}
+                <a class="course-arrow" href="{{ course.url }}" aria-label="Open the {{ course.name }} course page">&#8599;</a>
+              {% endif %}
+            </span>
+            {% if course.term %}<span class="course-term">{{ course.term }}</span>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-    <ul class="course-list">
-      <li class="course-item">
-        <a class="course-name" href="https://edu.epfl.ch/coursebook/en/convex-optimization-MGT-418">Convex Optimization</a>
-        <span class="course-term">Fall 2023, 2024, 2025, 2026</span>
-      </li>
-      <li class="course-item">
-        <a class="course-name" href="https://edu.epfl.ch/coursebook/en/optimal-decision-making-MGT-483">Optimal Decision Making</a>
-        <span class="course-term">Spring 2024</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="teaching-group">
-    <div class="teaching-group__header">
-      <h3>Bilkent University</h3>
-      <span>Teaching Assistant</span>
-    </div>
-    <ul class="course-list">
-      <li class="course-item">
-        <span class="course-name">Engineering Economic Analysis</span>
-        <span class="course-term">Fall and Spring 2022</span>
-      </li>
-      <li class="course-item">
-        <span class="course-name">Modelling and Methods in Optimization</span>
-      </li>
-    </ul>
-  </div>
+  {% endfor %}
 </section>
