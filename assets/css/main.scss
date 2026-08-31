@@ -38,14 +38,14 @@
     "layout/json_cv"
 ;
 
-/* Custom publication styling */
-.pub-details {
-  margin-top: 0.15rem;
+/* Site typography and color */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.author-me {
-  color: #325D94;
-  font-weight: 600;
+a,
+a:visited {
+  color: #40786f;
 }
 
 a:hover,
@@ -53,55 +53,178 @@ a:focus {
   color: #2a7f78;
 }
 
-/* Global typography */
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+.author-me {
+  color: #325d94;
+  font-weight: 600;
 }
 
-/* Large About me heading */
+/* About page */
 .about-page .page__title {
+  margin: 0 0 1.65rem;
   font-family: "Inter", sans-serif;
-  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
-  line-height: 1;
+  line-height: 0.98;
   letter-spacing: -0.055em;
-  margin-bottom: 1.5rem;
 }
 
-/* Tiny Welcome label */
 .about-page .page__title::before {
   content: "Welcome";
   display: block;
   margin-bottom: 1rem;
-  color: #40786F;
-  font-size: 0.72rem;
+  color: #40786f;
+  font-size: 0.7rem;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
-/* Medium introductory sentence */
 .about-page .about-lead {
-  max-width: 48rem;
-  margin: 0 0 1.5rem;
-  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  max-width: 50rem;
+  margin: 0 0 1.6rem;
+  font-size: clamp(1.3rem, 2vw, 1.72rem);
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 1.48;
   letter-spacing: -0.025em;
 }
 
-/* Regular biography text */
-.about-page .page__content p:not(.about-lead) {
+.about-page .page__content > p:not(.about-lead) {
+  max-width: 46rem;
   font-size: 1rem;
   line-height: 1.75;
 }
 
-/* Section headings such as News */
 .about-page .page__content h2 {
-  margin-top: 3rem;
-  font-size: 1.4rem;
+  margin: 3.5rem 0 1.2rem;
+  font-size: 1.45rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.news-list {
+  border-top: 1px solid var(--global-border-color);
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.news-date {
+  padding-top: 0.2rem;
+  color: #40786f;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.news-item p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+/* Research page */
+.research-page .page__title {
+  margin: 0 0 2.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.research-list {
+  border-top: 1px solid var(--global-border-color);
+}
+
+.research-item {
+  margin: 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.research-link,
+.research-link:visited {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.8rem 0;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.research-arrow {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--global-border-color);
+  border-radius: 50%;
+  color: #40786f;
+  font-size: 1rem;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.research-content {
+  display: block;
+  min-width: 0;
+}
+
+.research-title {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  transition: color 160ms ease;
+}
+
+.research-meta {
+  display: block;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.research-link:hover,
+.research-link:focus {
+  color: var(--global-text-color);
+}
+
+.research-link:hover .research-title,
+.research-link:focus .research-title {
+  color: #40786f;
+}
+
+.research-link:hover .research-arrow,
+.research-link:focus .research-arrow {
+  background: #40786f;
+  color: #fff;
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 600px) {
+  .about-page .page__title {
+    font-size: 3rem;
+  }
+
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .research-link,
+  .research-link:visited {
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    gap: 0.8rem;
+    padding: 1.4rem 0;
+  }
 }

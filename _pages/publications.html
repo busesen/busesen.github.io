@@ -3,30 +3,27 @@ layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
+classes:
+  - research-page
 ---
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+{% assign publications = site.publications | sort: "date" | reverse %}
+
+<div class="research-list">
+  {% for post in publications %}
+    {% assign publication_url = post.link | default: post.url %}
+    <article class="research-item">
+      <a class="research-link" href="{{ publication_url }}">
+        <span class="research-arrow" aria-hidden="true">&#8599;</span>
+        <span class="research-content">
+          <span class="research-title">{{ post.title }}</span>
+          <span class="research-meta">
+            {{ post.authors }}, <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+          </span>
+        </span>
+      </a>
+    </article>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+</div>
