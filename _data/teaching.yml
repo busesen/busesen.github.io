@@ -7,10 +7,21 @@
     - name: "Optimal Decision Making"
       term: "Spring 2024"
       url: "https://edu.epfl.ch/coursebook/en/optimal-decision-making-MGT-483"
+    - name: "Supply chain management"
+      term: Spring 2023
+      url: "https://edu.epfl.ch/coursebook/fr/supply-chain-management-MGT-526"
 
 - institution: "Bilkent University"
   role: "Teaching Assistant"
   courses:
     - name: "Engineering Economic Analysis"
       term: "Fall and Spring 2022"
+      url: "https://catalog.bilkent.edu.tr/course/c13342.html"
+    - name: "A process outlook for industrial engineering"
+      term: "Spring 2021, Fall 2022, Spring 2022"
+      url: "https://catalog.bilkent.edu.tr/course/c13102.html"
+    - name: "Departmental Teaching Assistant"
+      term: Fall 2021
     - name: "Modelling and Methods in Optimization"
+      term: "Fall 2020"
+      url: "https://www.ie.bilkent.edu.tr/~mustafap/courses/ie303.html"
