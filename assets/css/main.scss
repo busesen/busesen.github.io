@@ -7,7 +7,6 @@
  * Note that the files are processed in the order they are imported, so they are partly
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import
     "vendor/breakpoint/breakpoint",
 
@@ -45,7 +44,7 @@ html {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 h1,
@@ -54,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 a,
@@ -73,13 +72,17 @@ a:focus {
 }
 
 /* About page */
+.about-page {
+  --section-heading-size: clamp(1.55rem, 2.4vw, 1.85rem);
+}
+
 .about-page .page__title {
-  margin: 0 0 1.65rem;
-  font-family: "Inter", sans-serif;
-  font-size: clamp(3rem, 6vw, 5rem);
+  margin: 0 0 1.35rem;
+  font-family: "Manrope", sans-serif;
+  font-size: var(--section-heading-size);
   font-weight: 700;
-  line-height: 0.98;
-  letter-spacing: -0.055em;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
 }
 
 .about-page .page__title::before {
@@ -95,12 +98,13 @@ a:focus {
 }
 
 .about-page .about-lead {
-  max-width: 50rem;
-  margin: 0 0 1.6rem;
-  font-size: clamp(1.3rem, 2vw, 1.72rem);
+  max-width: 48rem;
+  margin: 0 0 1.4rem;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.05rem, 1.45vw, 1.22rem);
   font-weight: 500;
-  line-height: 1.48;
-  letter-spacing: -0.025em;
+  line-height: 1.58;
+  letter-spacing: -0.015em;
 }
 
 .about-page .page__content > p:not(.about-lead) {
@@ -111,11 +115,67 @@ a:focus {
 
 .about-page .page__content h2 {
   margin: 3.5rem 0 1.2rem;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1.45rem;
-  font-weight: 600;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: var(--section-heading-size);
+  font-weight: 700;
   line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.about-page .page__content h3,
+.research-title,
+.teaching-group__header h3,
+.course-name,
+.news-date,
+.news-item,
+.research-meta,
+.course-term {
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Author profile */
+.sidebar,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6,
+.sidebar p,
+.sidebar li,
+.sidebar a,
+.author__urls-wrapper {
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.sidebar .author__name {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
   letter-spacing: -0.025em;
+}
+
+.sidebar p,
+.sidebar li,
+.sidebar .author__urls a {
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.sidebar div.author__avatar {
+  width: 72px;
+  height: 72px;
+}
+
+.sidebar div.author__avatar > img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  max-width: none;
+  padding: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .home-section {
@@ -285,6 +345,42 @@ a:focus {
   text-align: right;
 }
 
+/* Service page */
+.service-page .page__title,
+.service-page .page__content h2 {
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1.55rem, 2.4vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-list li {
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--global-border-color);
+  font-family: "Manrope", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar div.author__avatar {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar div.author__avatar > img {
+    width: 100%;
+    height: auto;
+    max-width: 190px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -293,7 +389,7 @@ a:focus {
 
 @media (max-width: 600px) {
   .about-page .page__title {
-    font-size: 3rem;
+    font-size: 1.65rem;
   }
 
   .news-item {
