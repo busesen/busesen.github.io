@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a PhD candidate in the [Risk Analytics and Optimization Lab](https://www.epfl.ch/labs/rao/) at EPFL, where I am fortunate to be advised by Prof. [Daniel Kuhn](https://people.epfl.ch/daniel.kuhn?lang=en). My research focuses on scalable algorithms for decision-making under uncertainty, with a focus on robust optimization, sequential stochastic planning, and efficient estimation methods.
+Hi! I am a PhD candidate in the [Risk Analytics and Optimization Lab](https://www.epfl.ch/labs/rao/) at EPFL, where I am fortunate to be advised by Prof. [Daniel Kuhn](https://people.epfl.ch/daniel.kuhn?lang=en). My research focuses on algorithms for decision-making under uncertainty that are both reliable and computable at scale. Most decisions, such as pricing an option, stocking inventory, or deploying a model, are made from limited data, unfold over time, and have to survive a world that differs from the one in the data. My work addresses these challenges through distributionally robust methods that combine several data sources at once, multilevel Monte Carlo estimators that break the exponential cost of planning over many stages, and optimal transport tools for learning under distribution shift.
 {: .about-lead}
 
 Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent University, where I worked under the supervision of [Mustafa Çelebi Pınar](https://www.ie.bilkent.edu.tr/~mustafap/).
