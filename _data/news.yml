@@ -1,5 +1,9 @@
 # Add new items at the top so the newest news appears first.
 # Links use this format: [Link text](https://example.com)
 
+- date: "June 2026"
+  text: "I presented our paper [Multistage Conditional Compositional Optimization](https://arxiv.org/abs/2604.14075) at [SIAM OP26](https://www.siam.org/conferences-events/siam-conferences/op26/)."
+
+
 - date: "April 2026"
   text: "Our paper [Multistage Conditional Compositional Optimization](https://arxiv.org/abs/2604.14075) is online."
