@@ -41,10 +41,12 @@ Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent Uni
 
   <div class="news-panel">
     <div class="news-list">
-      <div class="news-item">
-        <span class="news-date">April 2026</span>
-        <p>Our paper <a href="https://arxiv.org/abs/2604.14075">Multistage Conditional Compositional Optimization</a> is online.</p>
-      </div>
+      {% for item in site.data.news %}
+        <div class="news-item">
+          <span class="news-date">{{ item.date }}</span>
+          {{ item.text | markdownify }}
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
