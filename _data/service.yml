@@ -7,4 +7,9 @@
 #   - name: "Operations Research"
 #
 # Replace the empty brackets with your journal entries.
-journals: []
+journals: 
+  - name: "Mathematical Programming"
+  - name: "Journal of Machine Learning Research (JMLR)"
+  - name: "Nature Portfolio"
+  - name: "IISE Transactions"
+  - name: "EURO Journal on Computational Optimization"
