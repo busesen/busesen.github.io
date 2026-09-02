@@ -9,4 +9,27 @@
 #       - "First Collaborator"
 #       - "Second Collaborator"
 
-papers: []
+papers: 
+   - title: "Efficient Data Fusion in Distributionally Robust Optimization"
+     collaborators:
+       - "Daniel Kuhn"
+       - "Jean Pauphilet"
+       - "Aras Selvi"
+  - title: "Brenier Meets Adversarial Training: Optimal Transport Geometry for Robust Learning"
+     collaborators:
+       - "Alireza Abdollahpoorrostam"
+       - "Ehsan Sharifian"
+       - "Marco Cuturi"
+       - "Daniel Kuhn"
+ - title: "Sparse Mean–Variance Portfolio Selection under Ellipsoidal Uncertainty"
+     collaborators:
+       - "Deniz Akkaya"
+       - "Emre Can Yayla"
+       - "Mustafa Ç. Pınarİ
+ - title: "Multilevel Monte Carlo Gradient Estimators for Federated Conditional Stochastic Optimization"
+     collaborators:
+       - "Philipp J. Schneider"
+       - "Daniel Kuhn"
+
+       
+
