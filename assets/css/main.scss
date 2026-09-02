@@ -323,11 +323,16 @@ html[data-theme="dark"] .author-me {
   margin-bottom: 0.65rem;
 }
 
-.teaching-group__header h3 {
+.teaching-group__header h3,
+.service-section > h3 {
   margin: 0;
   font-size: 1.15rem;
   font-weight: 650;
   letter-spacing: -0.02em;
+}
+
+.service-section > h3 {
+  margin-bottom: 0.65rem;
 }
 
 .teaching-group__header span {
@@ -351,7 +356,8 @@ html[data-theme="dark"] .author-me {
   padding: 0.8rem 0;
 }
 
-.course-name {
+.course-name,
+.service-name {
   color: var(--global-text-color);
   font-size: 0.98rem;
   font-weight: 550;
@@ -422,11 +428,6 @@ html[data-theme="dark"] .author-me {
   display: flex;
   align-items: center;
   gap: 0.55rem;
-}
-
-.service-name {
-  color: var(--global-text-color);
-  font-weight: 550;
 }
 
 @media screen and (min-width: 1024px) {
