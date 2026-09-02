@@ -76,3 +76,19 @@ Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent Uni
     </div>
   {% endfor %}
 </section>
+
+<section id="service" class="home-section service-section" aria-labelledby="service-heading">
+  <h2 id="service-heading">Service</h2>
+  <h3>Journal Reviewing</h3>
+
+  {% if site.data.service.journals and site.data.service.journals.size > 0 %}
+    <ul class="service-list">
+      {% for journal in site.data.service.journals %}
+        <li class="service-item">
+          <span class="service-name">{{ journal.name }}</span>
+          {% if journal.url %}<a class="course-arrow" href="{{ journal.url }}" aria-label="Open the {{ journal.name }} website">&#8599;</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>
