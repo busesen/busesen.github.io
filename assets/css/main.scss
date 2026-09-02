@@ -253,6 +253,21 @@ html[data-theme="dark"] .author-me {
   text-decoration: none;
 }
 
+.research-static {
+  padding: 1.55rem 0 1.55rem 3.5rem;
+}
+
+.working-papers {
+  margin-top: 2.25rem;
+}
+
+.working-papers__note {
+  margin: 0 0 0.85rem;
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
 .research-arrow {
   display: inline-flex;
   width: 2rem;
@@ -324,14 +339,16 @@ html[data-theme="dark"] .author-me {
 }
 
 .teaching-group__header h3,
-.service-section > h3 {
+.service-section > h3,
+.working-papers__heading {
   margin: 0;
   font-size: 1.15rem;
   font-weight: 650;
   letter-spacing: -0.02em;
 }
 
-.service-section > h3 {
+.service-section > h3,
+.working-papers__heading {
   margin-bottom: 0.65rem;
 }
 

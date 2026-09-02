@@ -1,0 +1,12 @@
+# Working papers appear in the order listed below.
+# Collaborator names are displayed alphabetically, regardless of their order here.
+#
+# To add a paper, replace `papers: []` with entries like this:
+#
+# papers:
+#   - title: "A Working Paper Title"
+#     collaborators:
+#       - "First Collaborator"
+#       - "Second Collaborator"
+
+papers: []

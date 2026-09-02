@@ -34,6 +34,28 @@ Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent Uni
       </article>
     {% endfor %}
   </div>
+
+  {% assign working_papers = site.data.working_papers.papers %}
+  {% if working_papers and working_papers.size > 0 %}
+    <div class="working-papers">
+      <h3 class="working-papers__heading">Working papers</h3>
+      <p class="working-papers__note">Collaborators are listed alphabetically.</p>
+
+      <div class="research-list">
+        {% for paper in working_papers %}
+          {% assign collaborators = paper.collaborators | sort %}
+          <article class="research-item">
+            <div class="research-static">
+              <span class="research-title">{{ paper.title }}</span>
+              {% if collaborators.size > 0 %}
+                <span class="research-meta">With {{ collaborators | join: ", " }}</span>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
 </section>
 
 <section id="news" class="home-section news-section" aria-labelledby="news-heading">
