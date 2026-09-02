@@ -1,5 +1,5 @@
 # Working papers appear in the order listed below.
-# Collaborator names are displayed alphabetically, regardless of their order here.
+# Collaborator names appear exactly in the order entered for each paper.
 #
 # To add a paper, replace `papers: []` with entries like this:
 #
@@ -32,4 +32,3 @@ papers:
        - "Daniel Kuhn"
 
        
-
