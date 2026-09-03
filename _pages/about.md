@@ -15,7 +15,7 @@ Hi! I am a PhD candidate in the [Risk Analytics and Optimization Lab](https://ww
 My research lies at the intersection of optimization, data science, and prescriptive analytics. I develop reliable and scalable algorithms that help decision-makers act under uncertainty, particularly in sequential settings where choices must be made before all relevant information is available. A central question in my work is how to account for uncertainty in data and models without sacrificing the speed and scale required in practice. I address this question through distributionally robust optimization, which safeguards decisions when historical data provide an incomplete picture of future conditions, and efficient sampling methods, including multilevel Monte Carlo, which make complex multistage models computationally tractable. My broader goal is to turn advances in optimization into practical tools for better decision-making across AI, finance, and operations.
 
 
-Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent University, where I worked under the supervision of [Mustafa Çelebi Pınar](https://www.ie.bilkent.edu.tr/~mustafap/).
+Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent University, where I worked under the supervision of Prof. [Mustafa Çelebi Pınar](https://www.ie.bilkent.edu.tr/~mustafap/).
 
 <section id="research" class="home-section research-section" aria-labelledby="research-heading">
   <h2 id="research-heading">Research</h2>
