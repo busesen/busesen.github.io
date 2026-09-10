@@ -8,6 +8,7 @@
 #
 # Replace the empty brackets with your journal entries.
 journals: 
+  - name: "Operations Research"
   - name: "Mathematical Programming"
   - name: "Journal of Machine Learning Research (JMLR)"
   - name: "Nature Portfolio"
