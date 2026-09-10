@@ -10,7 +10,7 @@
 journals: 
   - name: "Operations Research"
   - name: "Mathematical Programming"
-  - name: "Journal of Machine Learning Research (JMLR)"
   - name: "Nature Portfolio"
+  - name: "Journal of Machine Learning Research (JMLR)"
   - name: "IISE Transactions"
   - name: "EURO Journal on Computational Optimization"
