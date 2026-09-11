@@ -21,11 +21,6 @@ papers:
        - "Ehsan Sharifian"
        - "Marco Cuturi"
        - "Daniel Kuhn"
-   - title: "Sparse Mean–Variance Portfolio Selection under Ellipsoidal Uncertainty"
-     collaborators:
-       - "Deniz Akkaya"
-       - "Emre Can Yayla"
-       - "Mustafa Ç. Pınar"
    - title: "Multilevel Monte Carlo Gradient Estimators for Federated Conditional Stochastic Optimization"
      collaborators:
        - "Philipp J. Schneider"
