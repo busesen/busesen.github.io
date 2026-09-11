@@ -1,6 +1,9 @@
 # Add new items at the top so the newest news appears first.
 # Links use this format: [Link text](https://example.com)
 
+- date: "September 2026"
+  text: "Our paper [Sparsity Regularized and Robust Mean Variance Portfolio Selection Under Ellipsoidal Uncertainty](https://arxiv.org/abs/2609.11749) is online!"
+
 - date: "June 2026"
   text: "I presented our paper [Multistage Conditional Compositional Optimization](https://arxiv.org/abs/2604.14075) at [SIAM OP26](https://www.siam.org/conferences-events/siam-conferences/op26/)."
 
