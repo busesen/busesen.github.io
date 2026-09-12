@@ -193,6 +193,20 @@ html[data-theme="dark"] .author-me {
   line-height: 1.55;
 }
 
+.sidebar .author__urls a,
+.sidebar .author__urls a:visited {
+  color: var(--global-text-color);
+}
+
+.sidebar .author__urls a:hover,
+.sidebar .author__urls a:focus {
+  color: var(--site-accent-color);
+}
+
+.sidebar .author__urls a i {
+  color: inherit;
+}
+
 .sidebar div.author__avatar {
   width: 72px;
   height: 72px;
