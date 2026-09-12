@@ -41,6 +41,19 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
+  --site-accent-color: #40786f;
+  --site-accent-hover: #2a7f78;
+  --site-accent-border: rgba(64, 120, 111, 0.45);
+  --site-accent-soft: rgba(64, 120, 111, 0.07);
+  --site-accent-on: #fff;
+}
+
+html[data-theme="dark"] {
+  --site-accent-color: #8fd8cf;
+  --site-accent-hover: #b8eee8;
+  --site-accent-border: rgba(143, 216, 207, 0.65);
+  --site-accent-soft: rgba(143, 216, 207, 0.08);
+  --site-accent-on: #183632;
 }
 
 body {
@@ -58,12 +71,12 @@ h6 {
 
 a,
 a:visited {
-  color: #40786f;
+  color: var(--site-accent-color);
 }
 
 a:hover,
 a:focus {
-  color: #2a7f78;
+  color: var(--site-accent-hover);
 }
 
 .author-me {
@@ -108,7 +121,7 @@ html[data-theme="dark"] .author-me {
   content: "Welcome";
   display: block;
   margin-bottom: 1rem;
-  color: #40786f;
+  color: var(--site-accent-color);
   font-size: 0.7rem;
   font-weight: 700;
   line-height: 1;
@@ -209,7 +222,7 @@ html[data-theme="dark"] .author-me {
   padding: 0 1.25rem;
   border: 1px solid var(--global-border-color);
   border-radius: 0.75rem;
-  background: rgba(64, 120, 111, 0.07);
+  background: var(--site-accent-soft);
 }
 
 .news-item {
@@ -221,7 +234,7 @@ html[data-theme="dark"] .author-me {
 
 .news-date {
   padding-top: 0.2rem;
-  color: #40786f;
+  color: var(--site-accent-color);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -269,7 +282,7 @@ html[data-theme="dark"] .author-me {
   justify-content: center;
   border: 1px solid var(--global-border-color);
   border-radius: 50%;
-  color: #40786f;
+  color: var(--site-accent-color);
   font-size: 1rem;
   transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
@@ -303,13 +316,13 @@ html[data-theme="dark"] .author-me {
 
 .research-link:hover .research-title,
 .research-link:focus .research-title {
-  color: #40786f;
+  color: var(--site-accent-color);
 }
 
 .research-link:hover .research-arrow,
 .research-link:focus .research-arrow {
-  background: #40786f;
-  color: #fff;
+  background: var(--site-accent-color);
+  color: var(--site-accent-on);
   transform: translate(2px, -2px);
 }
 
@@ -388,9 +401,9 @@ html[data-theme="dark"] .author-me {
   flex: 0 0 1.35rem;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(64, 120, 111, 0.45);
+  border: 1px solid var(--site-accent-border);
   border-radius: 50%;
-  color: #40786f;
+  color: var(--site-accent-color);
   font-size: 0.72rem;
   line-height: 1;
   text-decoration: none;
@@ -399,8 +412,8 @@ html[data-theme="dark"] .author-me {
 
 .course-arrow:hover,
 .course-arrow:focus {
-  background: #40786f;
-  color: #fff;
+  background: var(--site-accent-color);
+  color: var(--site-accent-on);
   text-decoration: none;
   transform: translate(1px, -1px);
 }
