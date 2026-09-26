@@ -280,6 +280,13 @@ html[data-theme="dark"] .author-me {
   text-decoration: none;
 }
 
+.about-page .page__content a.research-link,
+.about-page .page__content a.research-link:visited,
+.about-page .page__content a.research-link:hover,
+.about-page .page__content a.research-link:focus {
+  text-decoration: none;
+}
+
 .research-static {
   padding: 1.55rem 0 1.55rem 3.5rem;
 }
