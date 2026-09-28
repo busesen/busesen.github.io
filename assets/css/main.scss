@@ -332,6 +332,10 @@ html[data-theme="dark"] .author-me {
   line-height: 1.6;
 }
 
+.research-meta-tail {
+  white-space: nowrap;
+}
+
 .research-note {
   display: block;
   margin-top: 0.25rem;
@@ -524,6 +528,10 @@ html[data-theme="dark"] .author-me {
     grid-template-columns: 2.25rem minmax(0, 1fr);
     gap: 0.8rem;
     padding: 1.4rem 0;
+  }
+
+  .research-meta-tail {
+    white-space: normal;
   }
 
   .teaching-group__header {
