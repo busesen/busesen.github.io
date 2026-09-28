@@ -80,12 +80,14 @@ a:focus {
 }
 
 .author-me {
-  color: #325d94;
+  /* Previous color: #325d94; */
+  color: #8b3a62;
   font-weight: 600;
 }
 
 html[data-theme="dark"] .author-me {
-  color: #e4b86a;
+  /* Previous dark-mode color: #e4b86a; */
+  color: #f0a6ca;
 }
 
 /* Keep the masthead links neutral, including after they have been visited. */
