@@ -6,5 +6,6 @@ permalink: /publication/icnn
 date: 2026-09-01
 venue: "NeurIPS"
 link: "https://arxiv.org/pdf/2609.31363"
-authors: 'Alireza Abdollahpoorrostam*, Ehsan Sharifian*, <span class="author-me">B. Şen*</span>, Marco Cuturi, and Daniel Kuhn'
+authors: 'Alireza Abdollahpoorrostam<sup>*</sup>, Ehsan Sharifian<sup>*</sup>, <span class="author-me">B. Şen<sup>*</sup></span>, Marco Cuturi, and Daniel Kuhn'
+equal_contribution: true
 ---

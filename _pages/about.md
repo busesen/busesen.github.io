@@ -34,6 +34,9 @@ Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent Uni
             <span class="research-meta">
               {{ post.authors }}, <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
             </span>
+            {% if post.equal_contribution %}
+              <span class="research-note">* Equal contribution</span>
+            {% endif %}
           </span>
         </a>
       </article>

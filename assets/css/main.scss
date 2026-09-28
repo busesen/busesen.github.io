@@ -330,6 +330,21 @@ html[data-theme="dark"] .author-me {
   line-height: 1.6;
 }
 
+.research-meta sup {
+  font-size: 0.7em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.research-note {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 .research-link:hover,
 .research-link:focus {
   color: var(--global-text-color);
