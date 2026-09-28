@@ -32,12 +32,7 @@ Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent Uni
           <span class="research-content">
             <span class="research-title">{{ post.title }}</span>
             <span class="research-meta">
-              {% assign author_parts = post.authors | split: ", and " %}
-              {% if author_parts.size > 1 %}
-                {{ author_parts | first }}, <span class="research-meta-tail">and {{ author_parts | last }}, <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}</span>
-              {% else %}
-                {{ post.authors }}, <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
-              {% endif %}
+              {{ post.authors }}, <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
             </span>
             {% if post.equal_contribution %}
               <span class="research-note">* Equal contribution</span>
