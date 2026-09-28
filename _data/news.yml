@@ -2,6 +2,9 @@
 # Links use this format: [Link text](https://example.com)
 
 - date: "September 2026"
+  text: "Our paper [Brenier Meets Adversarial Training: Optimal Transport Geometry for Robust Learning](https://arxiv.org/pdf/2609.31363) just got accepted to NeurIPS!"
+
+- date: "September 2026"
   text: "Our paper [Sparsity Regularized and Robust Mean Variance Portfolio Selection Under Ellipsoidal Uncertainty](https://arxiv.org/abs/2609.11749) is online!"
 
 - date: "June 2026"
