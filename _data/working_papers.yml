@@ -15,12 +15,6 @@ papers:
        - "Daniel Kuhn"
        - "Jean Pauphilet"
        - "Aras Selvi"
-   - title: "Brenier Meets Adversarial Training: Optimal Transport Geometry for Robust Learning"
-     collaborators:
-       - "Alireza Abdollahpoorrostam"
-       - "Ehsan Sharifian"
-       - "Marco Cuturi"
-       - "Daniel Kuhn"
    - title: "Multilevel Monte Carlo Gradient Estimators for Federated Conditional Stochastic Optimization"
      collaborators:
        - "Philipp J. Schneider"
