@@ -39,6 +39,9 @@ Previously, I obtained my MSc and BSc in Industrial Engineering from Bilkent Uni
             {% endif %}
           </span>
         </a>
+        {% if post.workshop %}
+          <span class="research-note research-workshop">{{ post.workshop }}</span>
+        {% endif %}
       </article>
     {% endfor %}
   </div>

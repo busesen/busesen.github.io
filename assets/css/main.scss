@@ -341,6 +341,15 @@ html[data-theme="dark"] .author-me {
   line-height: 1.4;
 }
 
+.research-workshop {
+  margin: -1.25rem 0 1.45rem 3.5rem;
+}
+
+.research-workshop a,
+.research-workshop a:visited {
+  color: var(--site-accent-color);
+}
+
 .research-link:hover,
 .research-link:focus {
   color: var(--global-text-color);
@@ -524,6 +533,10 @@ html[data-theme="dark"] .author-me {
     grid-template-columns: 2.25rem minmax(0, 1fr);
     gap: 0.8rem;
     padding: 1.4rem 0;
+  }
+
+  .research-workshop {
+    margin-left: 3.05rem;
   }
 
   .teaching-group__header {
